@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "betterfletching:explosive_arrow"
+    "betterfletching:explosive_arrow",
+    "betterfletching:ender_arrow"
   ]
 }

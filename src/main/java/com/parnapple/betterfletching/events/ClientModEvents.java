@@ -1,8 +1,8 @@
 package com.parnapple.betterfletching.events;
 
 import com.parnapple.betterfletching.BetterFletching;
-import com.parnapple.betterfletching.client.ExplosiveArrowRenderer;
-import com.parnapple.betterfletching.entities.ExplosiveArrow;
+import com.parnapple.betterfletching.client.renderers.EnderArrowRenderer;
+import com.parnapple.betterfletching.client.renderers.ExplosiveArrowRenderer;
 import com.parnapple.betterfletching.entities.ModEntityTypes;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.client.event.EntityRenderersEvent;
@@ -14,6 +14,7 @@ public class ClientModEvents {
     @SubscribeEvent
     public static void registerRenderers(EntityRenderersEvent.RegisterRenderers event) {
         event.registerEntityRenderer(ModEntityTypes.EXPLOSIVE_ARROW.get(), ExplosiveArrowRenderer::new);
+        event.registerEntityRenderer(ModEntityTypes.ENDER_ARROW.get(), EnderArrowRenderer::new);
     }
 
 }

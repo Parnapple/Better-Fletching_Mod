@@ -16,11 +16,19 @@ public class ModEntityTypes {
             DeferredRegister.create(ForgeRegistries.ENTITY_TYPES, BetterFletching.MODID);
 
     public static final RegistryObject<EntityType<ExplosiveArrow>> EXPLOSIVE_ARROW = ENTITY_TYPES.register("explosive_arrow",
-            () -> EntityType.Builder.<ExplosiveArrow>of(ExplosiveArrow::new, MobCategory.CREATURE)
+            () -> EntityType.Builder.<ExplosiveArrow>of(ExplosiveArrow::new, MobCategory.MISC)
                     .sized(0.5f, 0.5f)
                     .clientTrackingRange(4).
                     updateInterval(20)
                     .build(new ResourceLocation(BetterFletching.MODID, "explosive_arrow").toString())
+    );
+
+    public static final RegistryObject<EntityType<EnderArrow>> ENDER_ARROW = ENTITY_TYPES.register("ender_arrow",
+            () -> EntityType.Builder.<EnderArrow>of(EnderArrow::new, MobCategory.MISC)
+                    .sized(0.5f, 0.5f)
+                    .clientTrackingRange(4).
+                    updateInterval(20)
+                    .build(new ResourceLocation(BetterFletching.MODID, "ender_arrow").toString())
     );
 
     public static void register(IEventBus eventBus) {

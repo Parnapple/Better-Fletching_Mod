@@ -15,6 +15,9 @@ public class ModItems {
     public static final RegistryObject<Item> EXPLOSIVE_ARROW = ITEMS.register("explosive_arrow",
             () -> new ExplosiveArrowItem(new Item.Properties()));
 
+    public static final RegistryObject<Item> ENDER_ARROW = ITEMS.register("ender_arrow",
+            () -> new EnderArrowItem(new Item.Properties()));
+
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

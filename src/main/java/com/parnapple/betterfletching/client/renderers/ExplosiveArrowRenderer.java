@@ -1,12 +1,10 @@
-package com.parnapple.betterfletching.client;
+package com.parnapple.betterfletching.client.renderers;
 
 import com.parnapple.betterfletching.BetterFletching;
 import com.parnapple.betterfletching.entities.ExplosiveArrow;
 import net.minecraft.client.renderer.entity.ArrowRenderer;
 import net.minecraft.client.renderer.entity.EntityRendererProvider;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.entity.Entity;
-import net.minecraft.world.entity.projectile.SpectralArrow;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 

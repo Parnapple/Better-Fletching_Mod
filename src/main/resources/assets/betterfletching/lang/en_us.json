@@ -1,5 +1,7 @@
 {
   "item.betterfletching.explosive_arrow": "Explosive Arrow",
+  "item.betterfletching.ender_arrow": "Ender Arrow",
 
-  "entity.betterfletching.explosive_arrow": "Explosive Arrow"
+  "entity.betterfletching.explosive_arrow": "Explosive Arrow",
+  "entity.betterfletching.ender_arrow": "Ender Arrow"
 }
