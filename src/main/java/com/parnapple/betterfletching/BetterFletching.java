@@ -1,7 +1,10 @@
 package com.parnapple.betterfletching;
 
 import com.mojang.logging.LogUtils;
+import com.parnapple.betterfletching.entities.ModEntityTypes;
+import com.parnapple.betterfletching.item.ModItems;
 import net.minecraft.client.Minecraft;
+import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -51,6 +54,10 @@ public class BetterFletching
     public BetterFletching() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
+        ModItems.register(modEventBus);
+        ModEntityTypes.register(modEventBus);
+
+
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
 
@@ -74,8 +81,10 @@ public class BetterFletching
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event)
     {
-//        if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS)
-//            event.accept(EXAMPLE_BLOCK_ITEM);
+        if (event.getTabKey() == CreativeModeTabs.COMBAT) {
+            event.accept(ModItems.EXPLOSIVE_ARROW);
+        }
+
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
