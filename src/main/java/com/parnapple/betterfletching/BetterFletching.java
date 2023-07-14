@@ -83,6 +83,7 @@ public class BetterFletching
     {
         if (event.getTabKey() == CreativeModeTabs.COMBAT) {
             event.accept(ModItems.EXPLOSIVE_ARROW);
+            event.accept(ModItems.ENDER_ARROW);
         }
 
     }

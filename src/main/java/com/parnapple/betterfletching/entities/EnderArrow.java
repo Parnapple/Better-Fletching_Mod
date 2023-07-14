@@ -34,12 +34,6 @@ public class EnderArrow extends AbstractArrow {
     }
 
     @Override
-    protected void onHitBlock(BlockHitResult pResult) {
-        super.onHitBlock(pResult);
-        this.discard();
-    }
-
-    @Override
     protected void onHit(HitResult pResult) {
         super.onHit(pResult);
         for(int i = 0; i < 32; ++i) {
