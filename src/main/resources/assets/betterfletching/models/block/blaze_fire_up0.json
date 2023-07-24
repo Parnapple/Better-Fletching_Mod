@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/template_fire_up",
+  "textures": {
+    "fire": "betterfletching:block/blaze_fire_0"
+  }
+}

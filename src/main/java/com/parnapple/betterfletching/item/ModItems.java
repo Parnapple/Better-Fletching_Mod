@@ -18,6 +18,9 @@ public class ModItems {
     public static final RegistryObject<Item> ENDER_ARROW = ITEMS.register("ender_arrow",
             () -> new EnderArrowItem(new Item.Properties()));
 
+    public static final RegistryObject<Item> LIGHTNING_ARROW = ITEMS.register("lightning_arrow",
+            () -> new LightningArrowItem(new Item.Properties()));
+
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

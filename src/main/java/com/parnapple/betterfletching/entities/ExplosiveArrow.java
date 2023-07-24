@@ -50,7 +50,7 @@ public class ExplosiveArrow extends AbstractArrow {
             i = (int)Math.min(j + (long)i, 2147483647L);
         }
 
-        level.explode(this.getOwner(), pos.x, pos.y, pos.z, i/3f, Level.ExplosionInteraction.MOB);
+        level.explode(this.getOwner(), pos.x, pos.y, pos.z, i/2.5f, Level.ExplosionInteraction.MOB);
     }
 
 }

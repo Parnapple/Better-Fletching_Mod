@@ -1,6 +1,7 @@
 package com.parnapple.betterfletching;
 
 import com.mojang.logging.LogUtils;
+import com.parnapple.betterfletching.block.ModBlocks;
 import com.parnapple.betterfletching.entities.ModEntityTypes;
 import com.parnapple.betterfletching.item.ModItems;
 import net.minecraft.client.Minecraft;
@@ -55,6 +56,7 @@ public class BetterFletching
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
         ModEntityTypes.register(modEventBus);
 
 
@@ -84,6 +86,8 @@ public class BetterFletching
         if (event.getTabKey() == CreativeModeTabs.COMBAT) {
             event.accept(ModItems.EXPLOSIVE_ARROW);
             event.accept(ModItems.ENDER_ARROW);
+            event.accept(ModItems.LIGHTNING_ARROW);
+
         }
 
     }

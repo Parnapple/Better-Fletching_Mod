@@ -1,7 +1,11 @@
 {
   "item.betterfletching.explosive_arrow": "Explosive Arrow",
   "item.betterfletching.ender_arrow": "Ender Arrow",
+  "item.betterfletching.lightning_arrow": "Lightning Arrow",
 
   "entity.betterfletching.explosive_arrow": "Explosive Arrow",
-  "entity.betterfletching.ender_arrow": "Ender Arrow"
+  "entity.betterfletching.ender_arrow": "Ender Arrow",
+  "entity.betterfletching.lightning_arrow": "Lightning Arrow",
+
+  "block.betterfletching.blaze_fire_block": "Blaze Fire"
 }

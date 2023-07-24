@@ -31,6 +31,14 @@ public class ModEntityTypes {
                     .build(new ResourceLocation(BetterFletching.MODID, "ender_arrow").toString())
     );
 
+    public static final RegistryObject<EntityType<LightningArrow>> LIGHTNING_ARROW = ENTITY_TYPES.register("lightning_arrow",
+            () -> EntityType.Builder.<LightningArrow>of(LightningArrow::new, MobCategory.MISC)
+                    .sized(0.5f, 0.5f)
+                    .clientTrackingRange(4).
+                    updateInterval(20)
+                    .build(new ResourceLocation(BetterFletching.MODID, "lightning_arrow").toString())
+    );
+
     public static void register(IEventBus eventBus) {
         ENTITY_TYPES.register(eventBus);
     }
