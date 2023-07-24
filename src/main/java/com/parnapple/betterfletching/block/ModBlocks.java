@@ -19,8 +19,8 @@ public class ModBlocks {
         DeferredRegister.create(ForgeRegistries.BLOCKS, BetterFletching.MODID);
 
 
-//    public static final RegistryObject<Block> BLAZE_FIRE_BLOCK = registerBlockNoItem("blaze_fire_block",
-//            () -> new BlazeFireBlock(BlockBehaviour.Properties.copy(Blocks.FIRE)));
+    public static final RegistryObject<Block> BLAZE_FIRE_BLOCK = registerBlockNoItem("blaze_fire_block",
+            () -> new BlazeFireBlock(BlockBehaviour.Properties.copy(Blocks.FIRE)));
 
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
